@@ -171,13 +171,21 @@ console.log(manav);
 			4. elde edilen string döndürülecek
  */
 
-function emojileriDonustur(/* kodlar buraya */){
-/* kodlar buraya */
+			function emojileriDonustur(mesaj, emojiler) {
+				mesaj = mesaj.toLowerCase();
+				
+				for (var sembol in emojiler) {
+				  var emoji = emojiler[sembol];
+				  mesaj = mesaj.replaceAll(sembol.toLowerCase(), emoji);
+				  mesaj = mesaj.replaceAll(sembol.toUpperCase(), emoji);
+				}
+				
+				return mesaj;
+			  }
 
-}
+			  console.log(emojileriDonustur("Merhaba arkadaşlar, bugün çok mutluyum! :D :p <3", emojiler)); 
 
-
-
+			  
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 function sa(){
     console.log('Kodlar çalışıyor');
