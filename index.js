@@ -133,23 +133,20 @@ console.log(bircumle);
 			3a. meyveler dizisinin ilk ve son elemanlarını diziden çıkartın. (.pop ve .shift metodlarını kullanın)
  */
 //3a çözümü
-/* kodlar buraya */
 
+meyveler.pop(); // son elemanı çıkartır
+meyveler.shift(); // ilk elemanı çıkartır
 
-
-
+console.log("3A",meyveler);
 
  
 /* 			3b.  Bir tavşan ve bir kirpi arkadaşlar sebzeler dizimizin peşine düştü. Tavşan => 🐇 , Kirpi=> 🦔 , Tavşanla kirpi sebzeleri ele geçirmek için bir plan kurdular. Tavşan diziye önden saldıracak, kirpi ise arkalarından dolaşacak. Varsayalım ki arkadaşların planları başarılı oldu. Tavşanı dizinin ilk elemanına 🐇, Kirpiyi dizinin son elemanına ekleyin 🦔 
 */
 //3b çözümü
-/* kodlar buraya */
 
-
-
-
-
-
+sebzeler.unshift('🐇');
+sebzeler.push('🦔');
+console.log("3B",sebzeler); 
 
 
 /* 			3c. manav isminde bir dizi oluşturun.`meyveler` dizisi ilk elemanlara, `sebzeler` dizisi son elemanlara denk gelecek şekilde, iki diziyi birleştirip sonucu manav dizisine aktarın. (.concat metodu)
@@ -158,7 +155,8 @@ console.log(bircumle);
 /* kodlar buraya */
 
 var manav;
-
+manav = meyveler.concat(sebzeler.slice(0));
+console.log(manav);
 
 
 
